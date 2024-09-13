@@ -44,10 +44,11 @@ public class TransformRecorder : ComponentRecorder
 
     protected override void EvenComponentState()
     {
+        transform.SetParent(parent, false);
         transform.localPosition = localPosition;
         transform.localRotation = localRotation;
         transform.localScale = localScale;
-        transform.SetParent(parent, false);
+        
     }
 
 

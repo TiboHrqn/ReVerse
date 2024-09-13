@@ -179,12 +179,17 @@ public class Storer
                 {
                     activeCompRec.DisableActiveComponent();
                 }
+            } 
+        }
+        foreach (var item in Recorder.Instance.activePausableCompRecorderDict)
+        {
+            if (item.Key.activeSelf)
+            {
                 foreach(ActivePausableComponentRecorder activePausableCompRec in item.Value)
                 {
                     activePausableCompRec.DisableActiveComponent();
                 }
-            }
-            
+            } 
         }
     }
 
@@ -198,6 +203,12 @@ public class Storer
                 {
                     pausableCompRec.PauseComponent();
                 }
+            }  
+        }
+        foreach (var item in Recorder.Instance.activePausableCompRecorderDict)
+        {
+            if (item.Key.activeSelf)
+            {
                 foreach(ActivePausableComponentRecorder activePausableCompRec in item.Value)
                 {
                     activePausableCompRec.PauseComponent();

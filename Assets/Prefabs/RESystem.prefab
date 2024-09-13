@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8939604894914166566}
   - component: {fileID: 987123608072802301}
   - component: {fileID: 3877203629276183960}
+  - component: {fileID: -2739854537853292415}
   m_Layer: 0
   m_Name: RESystem
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recordDelay: 0.1
-  recSetupConfig: {fileID: 0}
+  recSetupConfig: {fileID: 11400000, guid: 1f2c93b346802564c84eafbbab966d72, type: 2}
   avatar: {fileID: 0}
 --- !u!114 &8939604894914166566
 MonoBehaviour:
@@ -186,3 +187,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4aba1f9ff77147478945e58d6747b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2739854537853292415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939604894914166565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df7d2e9cb03ac84cb6dd87a3f22ab5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptNamesToEnable: []

@@ -5,7 +5,7 @@ using UnityEngine;
 public static class TInstanciator  
 {
 
-    public static GameObject Instantiate(GameObject gameObject)  // faire aussi les autres declarations de Instantiate
+    public static GameObject Instantiate(GameObject gameObject)
     {
         GameObject go = Object.Instantiate(gameObject);
         RecSetup.SetupRecordersDuringGame(go);
